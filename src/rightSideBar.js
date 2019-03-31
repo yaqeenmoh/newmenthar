@@ -91,10 +91,10 @@ this.state = {open : false , open2 : false , open3 : false};
 				</div>
 				</div>
 				<div className="row">
-				<div className="col-md-4"  >
+				<div className="col-md-6"  >
 				<GalleryCard2 data={{Imgurl :conversation,text :"شبابيك"  }}/>
 				</div>
-				<div className="col-md-4" style={{marginRight:20}}>
+				<div className="col-md-6" >
 				<GalleryCard2 data={{Imgurl :telescope,text :"منظار"  }}/>
 				</div>
 				</div>

@@ -3,89 +3,88 @@ import React from 'react'
 import { MDBTable, MDBTableBody, MDBTableHead,MDBContainer,MDBRow,MDBIcon, MDBCol } from 'mdbreact';
 import playstore from './icons/playstore.svg'
 import appstore from './icons/appstore.svg'
+import envelope from './icons/other/2/envelope.svg'
+import whatsapp from './icons/other/2/whatsapp-logo.svg'
+import youtube from './icons/other/2/youtube-logo.svg'
+import inst from './icons/other/2/instagram-logo.svg'
+import twitter from './icons/other/2/twitter-logo-silhouette.svg'
+import facebook from './icons/other/2/facebook-logo.svg'
 const Footer = props => {
   return (
       <div className="footer" style={{marginTop:50}}>
-    <MDBTable className="pl-2 text-center unique-color-dark white-text" borderless>
+<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h4>روابط سريعة</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">جروبات جوأكاديمي</a></li>
+                        <li><a href="#">دبلومات ودورات</a></li>
+                        <li><a href="#">المدارس والجامعات</a></li>
+                        <li><a href="#">بنك الأسئلة</a></li>
+                        <li><a href="#">احسب معدلك</a></li>
+                        <li><a href="#">الجدول الدراسي</a></li>
+                        <li><a href="#">معلمون</a></li>
+                        <li><a href="#">كتب الوزارة وأجوبتها</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h4>الدعم</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">الأسئلة الأكثر شيوعا</a></li>
+                        <li><a href="#">منظار</a></li>
+                        <li><a href="#">نقاط البيع</a></li>
+                        <li><a href="#">أستاذي</a></li>
+                        <li><a href="#">شبابيك</a></li>
+                        <li><a href="#">ألعاب</a></li>
+                        <li><a href="#">المدونة</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h4>من نحن</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">جو أكاديمي</a></li>
+                        <li><a href="#">الشروط و الأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">نقاط البيع</a></li>
+                    </ul>
 
-      <MDBTableHead >
-        <tr className="bold">
-        <th >من نحن</th>
-            <th>من نحن</th>
-            
-            <th>الدعم</th>
-            <th>روابط سريعه</th> 
-            
-   
-        
-        </tr>
-      </MDBTableHead>
-      <MDBTableBody>
-        <tr>
-        <td>جروبات جو اكاديمي</td>
-    <td>دبلومات ودورات</td>
-     <td>مدارس وجامعات</td>
-     <td> بنك الاسئلة</td>  
-        </tr>
-        <tr>
-        <td>جروبات جو اكاديمي</td>
-            <td>دبلومات ودورات</td>
-            <td>مدارس وجامعات</td>
-            <td> بنك الاسئلة</td>
-           
-        </tr>
-        <tr>
-        <td> بنك الاسئلة</td> 
-            <td>جروبات جو اكاديمي</td>
-             
-            <td>دبلومات ودورات</td>
-            <td>مدارس وجامعات</td>  
-        </tr>
-        <tr>
-            <td>جروبات جو اكاديمي</td>
-            <td>دبلومات ودورات</td>
-            <td>مدارس وجامعات</td>
-            <td> بنك الاسئلة</td>  
-            
-        </tr>
-        
-                <td>مدارس وجامعات</td>
-                <td> بنك الاسئلة</td>  
-            
-                <tr>
-               <td ><a href="#"><img className="m-2" src={playstore}></img></a> </td>
-               
-             
-                 <td><a href="#"> <img className="m-2" src={appstore}></img></a></td>
-                 </tr>
 
-        <tr>
-            <td>
-            
-            </td>
-            <div> 
-            <MDBRow className="m-1">
-                 <MDBCol>
+                </div>
 
-                 <p>جميع الحقوق محفوظة © 2018</p>
-                 </MDBCol>
-                 </MDBRow>
-                 <MDBRow className="m-3">
-                 <MDBCol >
-             
-             <MDBIcon  className="p-2" fab  size="2x" icon="facebook-f" />
-             <MDBIcon  className="p-2" fab  size="2x" icon="twitter" />
-             <MDBIcon  className="p-2" fab  size="2x" icon="youtube" />
-             <MDBIcon  className="p-2" fab  size="2x" icon="whatsapp" />
-             <MDBIcon  className="p-2" far  size="2x" icon="envelope" />
-             </MDBCol>
-             </MDBRow>
-           
-            </div>
-            
-        </tr>
-      </MDBTableBody>
-    </MDBTable>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h4>من نحن</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">جو أكاديمي</a></li>
+                        <li><a href="#">الشروط و الأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">نقاط البيع</a></li>
+                    </ul>
+                </div>
+
+                <div class="apps">
+                    <h4>حمل تطبيق جو أكاديمي على موبايلك</h4>
+                    <a href="https://play.google.com/store/apps/details?id=tawjihi.joacademy.ns4it.newjo1"><img src={playstore}/></a>
+                    <a href="#"><img src={appstore}/></a>
+                </div>
+
+                <div class="row last-line">
+                    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <a href="https://atomkit.com/">صنع بحب <span style={{color:"red"}}> </span> Atomkit</a>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 social-media">
+                        
+                        <a href="#"><img src={facebook}/></a>
+                        <a href="#"><img src={twitter}/></a>
+                        <a href="#"><img src={inst}/></a>
+                        <a href="#"><img src={youtube}/></a>
+                        <a href="#"><img src={whatsapp}/></a>
+                        <a href="#"><img src={envelope}/></a>
+                    </div>
+                    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <p>جميع الحقوق محفوظة &copy; 2018</p>
+                    </div>
+                    </div>
+     
 
     </div>
   );
