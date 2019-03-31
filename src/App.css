@@ -1,0 +1,622 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card-layout{
+width:230px;
+height:250px;
+background-color:white;
+color:black;
+/* background-image: url("./icons/card.png"); */
+-webkit-box-shadow: 0px -1px 2px 4px rgba(243,243,243,1);
+-moz-box-shadow: 0px -1px 2px 4px rgba(243,243,243,1);
+box-shadow: 0px -1px 2px 4px rgba(243,243,243,1);
+border-radius: 20px;
+background-image : url("./icons/box-background.png");
+direction: rtl;
+}
+.align-right{
+  text-align: right;
+ 
+}
+.w {
+  width: 80%;
+}
+.sidemenu-right{
+  position: absolute;
+  right :0;
+  z-index:999999;
+
+}
+.footer{
+  z-index:9999999999999;
+}
+.menu-block {
+  width: 329px;
+height: 5036.19px;
+background: #fff;
+box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.16);
+
+}
+.position{
+  position: relative;
+}
+
+.menu-right{
+  -webkit-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
+-moz-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
+box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
+width:170px;
+height:3650px;
+}
+.block-line{
+  height: 30px;
+}
+.menu-right div{
+  direction:rtl;
+}
+
+.nav-item div{
+  /* background-color:red !important; */
+  /* border :none; */
+  /* border:none; */
+right:auto !important;
+left: 0;
+margin-left:10px;
+}
+
+/* 
+.headSide{
+  
+   background-color:#F8F8F8 ;
+    line-height:3;
+    position:fixed;
+    width:100%;
+    padding:0px;
+} */
+.style1{
+
+  width: 84.41px;
+height: 25.39px;
+font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 16px;
+text-align: right;
+color: #8d8e8e;
+
+}
+.card-layout2{
+
+
+
+  width: 70px;
+height: 80px;
+border-radius: 10px;
+background: #034173;
+padding-top: 18%;
+
+}
+.card-layout2 p{
+  text-align: center;
+  padding-top:10px;
+  
+}
+.imageStyle{
+
+  font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 14px;
+text-align: right;
+color: #fff;
+
+}
+.ss{
+  width: 36.16px;
+height: 36.16px;
+background: transparent;
+text-align: bottom;
+padding-top:7%;
+}
+.sty{width: 1025px;
+  height: 82px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 6px 22px rgba(0, 0, 0, 0f.16);
+  }
+
+  .box-container div{
+    margin:17px;
+    
+  }
+  .title{
+    padding:10px;
+    color:#327BF9;
+  }
+  .desc {
+    padding:10px;
+  }
+
+  .uni-title , .uni-number{
+    font-size: 13pt;
+    font-style: oblique;
+    color:black;
+   
+  }
+  .uni-title {
+    margin-top:10px;
+  }
+
+  .uni-number{
+    color :#327BF9;
+  }
+  .uni-col{
+    border-left-width: 0.1px;
+    border-left-style: solid;
+    border-left-color: #707070;
+    width:200px !important;
+  }
+  .uni-col div{
+    width:200px;
+  }
+  .uni {
+    margin-left:20px;
+  }
+.country-shadow{
+  position: absolute;
+}
+.imgStyle{
+  width: 168.37px;
+height: 54.3px;
+/* background: url(...); */
+
+}
+.titleStyle{
+  width: 100%;
+height: 39px;
+font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 20px;
+text-align: right;
+color: #535962;
+
+}
+.col{    color: #fff;}
+
+
+.form-control{
+
+  width: 1042px;
+height: 50px;
+background: transparent;
+color: #fff;
+}
+.inputStyle{
+
+  font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 15px;
+text-align: right;
+color: #fff;
+opacity: 0.6;
+
+}
+.image2{
+
+  width: 30px;
+height: 300px;
+background-repeat: no-repeat;
+
+/* background: url(...); */
+
+}
+.title1
+{
+  width: 301px;
+  height: 65px;
+  font-family: "Noto Kufi Arabic";
+  font-weight: normal;
+  font-size: 35px;
+  text-align: right;
+  color: #535962;
+  border: 0.7px solid #535962;
+  
+  }
+
+  .flag{
+    position: absolute;
+    bottom:35px;
+    left :50%;
+    }
+
+    .flag-title{
+      position: absolute;
+    bottom:45px;
+    left :20%;
+    }
+
+  .country div{
+    /* margin-right:25% !important; */
+    margin-left:0;
+    margin-right:0;
+    /* padding-right:0px  !important; 
+    padding-left:0px  !important;  */
+  
+  }
+  /* .country{
+    margin-left:20px !important;
+  } */
+  .w span {
+    margin-left: auto !important;
+  }
+  
+
+  .grad{
+    width:200px;
+height:50px;
+background: linear-gradient(transparent, #327BF9);
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0px;
+    margin:0px !important;
+    
+  }
+.mnhaj{
+  width:300px;
+  height:350px;
+  border-radius: 30px;
+  background-color: white;
+  -webkit-box-shadow: 0px -1px 2px 4px rgba(243,243,243,1);
+-moz-box-shadow: 0px -1px 2px 4px rgba(243,243,243,1);
+box-shadow: 0px -1px 2px 4px rgba(243,243,243,1);
+}
+.top{
+  width:inherit;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height:50%;
+  background-color:rgb(3,65,115);
+  position: relative;
+}
+
+.bottom{
+  width:inherit;
+  height:50%;
+  position: relative;
+  color:black;
+  text-align: right;
+  
+}
+.topImg{
+  opacity: 0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+  width:300px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.uni-part{
+  width:65px;
+  height:80px;
+  background-color: white;
+  position: absolute;
+  left:40px;
+  opacity: 1;
+  z-index: 99999999999999;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+
+}
+.uni-part2{
+  width:65px;
+  height:80px;
+  background-color: white;
+  position: absolute;
+  right:10%;
+  opacity: 1;
+  z-index: 99999999999999;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color:black;
+  text-align: center;
+
+
+}
+.like{
+  width:65px;
+  height:80px;
+  background-color: white;
+  position: absolute;
+  left:10%;
+  opacity: 1;
+  z-index: 99999999999999;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color:black;
+  text-align: center;
+
+}
+.uniPart-logo{
+  margin-left:30%;
+  margin-top:30%;
+}
+.uniPart-logo2{
+  margin-right:10%;
+  margin-top:20%;
+}
+.inst{
+  position: absolute;
+  left:40px;
+  top:75%;
+}
+.inst-name{
+  color:black;
+  margin-left:30px;
+  margin-top:20px;
+}
+.price{
+  width:120px;
+  height:50px;
+
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color:white;
+  position: absolute;
+  right:0;
+  bottom:90%;
+  -webkit-box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+-moz-box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+text-align:center;
+
+}
+.price span {
+  color:black;
+  line-height: 40px;
+}
+.course-title{
+  line-height: 100px;
+  height:60px;
+  
+}
+.btn-add{
+  width: 156.54px;
+  height: 47.11px;
+  border-radius: 23.56px;
+  background: #327bf9;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  
+}
+
+.btn-view{
+  width: 167.95px;
+height: 47.11px;
+border-radius: 23.56px;
+background: transparent;
+border: 2px solid #327bf9;
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+
+
+}
+.fileContainer{
+  width:inherit;
+  height:100px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+  -moz-box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+  box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+  background-color:white;
+}
+ul.horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul.horizontal-list li {
+		display: inline;
+  }
+  .centertext{
+    text-align: center;
+  }
+  .uni-box{
+    -webkit-box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+  -moz-box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+  box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+  width:80px;
+  height:70px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  margin:0 !important;
+
+  }
+  .uni-box img{
+    margin-top:15%;
+  }
+  .value{
+    color:black;
+  }
+  .event-pic{
+    position :relative;
+  }
+  .event-pic img{
+    width:400px;
+  }
+  .event-content{
+position: absolute;
+width:320px;;
+height:250px;
+background-color:white;
+top:70%;
+left:20%;
+-webkit-box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+-moz-box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+box-shadow: 0px -1px 2px 2px rgba(243,243,243,1);
+border-top-left-radius: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 40px;
+ 
+  }
+  .event-content p {
+    color:black;
+    margin-top:20px;
+  }
+  .event-read{
+    position: absolute;
+    bottom:20%;
+    right:0;
+    
+    width: 84.41px;
+height: 25.39px;
+font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 15px;
+text-align: right;
+color: #AEACAC !important;
+margin-right: 21px;
+
+  }
+
+  .event-coming-title{
+    top:50%;
+    left:20%;
+    position: absolute;
+    width: 261.34px;
+    height: 47.9px;
+    font-family: "Noto Kufi Arabic";
+    font-weight: bold;
+  
+    
+
+    
+  }
+  .not{
+    margin-left: 20px !important;
+  }
+
+  .rounded-circle {
+    border-radius: 50%!important;
+    margin-left: 30px;
+}
+.margin{
+
+
+  margin-left: 30px;
+}
+a {
+  color: #ffff !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+.bold{
+
+  font-weight: bold;
+  font-size:larger;
+}
+.link{
+
+
+  font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 16px;
+text-align: right;
+color: #034173;
+border: 0.7px solid #034173;
+
+}
+.slideNav {
+  text-align: right;
+  margin-top:20px;
+}
+.slideNav a {
+  color :#007bff !important;
+}
+.backtojo{
+  font-size: 10pt;
+}
+.menu-container{
+    margin-left:20px;
+}
+.menu-container ul li {
+  list-style-type: none;
+  color:black;
+  padding-bottom: 10px;
+  margin-top:5px;
+  
+}
+.menu2{
+  margin-top:20px;
+}
+.arrow-ref{
+  position: absolute;
+  left:0;
+  margin-left:10px;
+}
+.menu3{
+  margin-top: 20px;
+}
+.other-rows{
+  font-size: 10pt;
+}
+.other-rows div{
+margin-top:20px;
+}
+.other-rows div a{
+  margin-right:10px;
+}
+.menu-right {
+  box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
+  width: 220px;
+  height: 3650px;
+}
+
+.row2{
+
+  font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 16px;
+text-align: right;
+color: #327BF9 !important;
+
+}
+.styleTime{
+
+  width: 163.41px;
+height: 25.39px;
+font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 14px;
+text-align: right;
+color: #aeacac;
+
+}
