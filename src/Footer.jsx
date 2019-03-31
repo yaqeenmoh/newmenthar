@@ -11,18 +11,25 @@ import twitter from './icons/other/2/twitter-logo-silhouette.svg'
 import facebook from './icons/other/2/facebook-logo.svg'
 const Footer = props => {
   return (
-      <div className="footer" style={{marginTop:50}}>
-<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    <h4>روابط سريعة</h4>
+      <div className="row" style={{marginTop:50}}>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h4>من نحن</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#">جروبات جوأكاديمي</a></li>
-                        <li><a href="#">دبلومات ودورات</a></li>
-                        <li><a href="#">المدارس والجامعات</a></li>
-                        <li><a href="#">بنك الأسئلة</a></li>
-                        <li><a href="#">احسب معدلك</a></li>
-                        <li><a href="#">الجدول الدراسي</a></li>
-                        <li><a href="#">معلمون</a></li>
-                        <li><a href="#">كتب الوزارة وأجوبتها</a></li>
+                        <li><a href="#">جو أكاديمي</a></li>
+                        <li><a href="#">الشروط و الأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">نقاط البيع</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h4>من نحن</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">جو أكاديمي</a></li>
+                        <li><a href="#">الشروط و الأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">نقاط البيع</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
@@ -38,27 +45,22 @@ const Footer = props => {
                         <li><a href="#">المدونة</a></li>
                     </ul>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    <h4>من نحن</h4>
+<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h4>روابط سريعة</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#">جو أكاديمي</a></li>
-                        <li><a href="#">الشروط و الأحكام</a></li>
-                        <li><a href="#">سياسة الخصوصية</a></li>
-                        <li><a href="#">نقاط البيع</a></li>
-                    </ul>
-
-
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    <h4>من نحن</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#">جو أكاديمي</a></li>
-                        <li><a href="#">الشروط و الأحكام</a></li>
-                        <li><a href="#">سياسة الخصوصية</a></li>
-                        <li><a href="#">نقاط البيع</a></li>
+                        <li><a href="#">جروبات جوأكاديمي</a></li>
+                        <li><a href="#">دبلومات ودورات</a></li>
+                        <li><a href="#">المدارس والجامعات</a></li>
+                        <li><a href="#">بنك الأسئلة</a></li>
+                        <li><a href="#">احسب معدلك</a></li>
+                        <li><a href="#">الجدول الدراسي</a></li>
+                        <li><a href="#">معلمون</a></li>
+                        <li><a href="#">كتب الوزارة وأجوبتها</a></li>
                     </ul>
                 </div>
+               
+                
+                
 
                 <div class="apps">
                     <h4>حمل تطبيق جو أكاديمي على موبايلك</h4>
@@ -73,12 +75,12 @@ const Footer = props => {
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 social-media">
                         
-                        <a href="#"><img src={facebook}/></a>
-                        <a href="#"><img src={twitter}/></a>
-                        <a href="#"><img src={inst}/></a>
-                        <a href="#"><img src={youtube}/></a>
-                        <a href="#"><img src={whatsapp}/></a>
-                        <a href="#"><img src={envelope}/></a>
+                        <a href="#" style={{marginLeft: 23}}><img src={facebook}/ ></a>
+                        <a href="#" style={{marginLeft: 23}}><img src={twitter}/></a>
+                        <a href="#" style={{marginLeft: 23}}><img src={inst}/></a>
+                        <a href="#" style={{marginLeft: 23}}><img src={youtube}/></a>
+                        <a href="#"style={{marginLeft: 23}}><img src={whatsapp}/></a>
+                        <a href="#"style={{marginLeft: 23}}><img src={envelope}/></a>
                     </div>
                     <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <p>جميع الحقوق محفوظة &copy; 2018</p>
