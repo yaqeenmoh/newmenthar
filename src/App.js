@@ -34,7 +34,9 @@ import Mnhaj from './sub-view/mnhaj';
 import Files from './sub-view/files';
 import Event from './sub-view/event';
 import ComingEvent from './sub-view/coming-events';
-import News from './icons/other/2/newspaper.svg'
+import News from './icons/other/2/newspaper.svg';
+import Input from  './input';
+
 
  
 
@@ -159,20 +161,11 @@ class App extends Component {
                <div className="rgba">
                <div className="container">
                <div className="row">
-               <div className="container">
-               {/* <form>
-               <div >مرحباً بك في منظار </div>
-               <label for="site-search">هل تبحث عن تخصص معين ؟</label>
-<input type="search" id="site-search" name="q"
-       aria-label="Search through site content"/>
-
-<button>Search</button>
-               <h1 className="title1">مرحباً بك في منظار   </h1>
-               <h2>منظار هي اول و أقوى برمجية تتيح للطالب معرفة التخصصات الجامعية في الأردن في كل من الجامعات الحكومية و الخاصة حسب معدل الطالب المتوقع أو الحقيقي وتمكنه من معرفة خيارات تقريبية للتخصصات الجامعية التي تناسبه من حيث المعدل الشخصية مكان السكن و التكلفة المادية ليتمكن في ذهنه من حصر التخصصات عند التقديم للقبول الموحد</h2>
-               <div className="centered">هل تبحث عن تخصص معين ؟</div>
-               </form> */}
+               <div style={{backgroundImage : "url("+image1+")"}} className="container form-container">
+              
                
-               <img src={image1} style={{height:400, marginRight:120}} />
+               {/* <img src={image1} style={{height:400, marginRight:120}} /> */}
+               <Input/>
                </div>
              
         </div>
