@@ -29,16 +29,17 @@ class NavBar extends Component {
 <BrowserRouter>
         <MDBNav>
           <MDBNavItem>
-                     <img className="margin" src={questionmark}></img>
+                    <a href="#!"><img className="margin" src={questionmark}></img></a> 
           </MDBNavItem>
           <MDBNavItem>
-          <img className="margin"  src={notification1}></img>
+          <a href="#!"> <img className="margin"  src={notification1}></img></a>
           </MDBNavItem>
           <MDBNavItem>
-          <img
+          <a href="#!"><img
           src={chat1}
           alt="" className="margin" >
-        </img><a href="#!"></a>
+        </img></a>
+          
           </MDBNavItem>
         </MDBNav>
         </BrowserRouter>
