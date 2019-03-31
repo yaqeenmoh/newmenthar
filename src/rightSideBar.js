@@ -86,7 +86,8 @@ this.state = {open : false , open2 : false , open3 : false};
 		<img src={groupIcon} className="m-1"></img>
 		</div>
 		<div className="col-md-9">
-				<p style={{color:"black"}} className="backtojo">العودة إلى جو أكادمي</p>
+	
+				<a href="#!"><p style={{fontFamily:"Noto Kufi Arabic",color: "#327bf9"}} className="backtojo">العودة إلى جو أكادمي</p></a>
 				
 				</div>
 				</div>
