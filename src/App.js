@@ -193,7 +193,7 @@ var settings2={
                </MDBCol>
                
        </MDBRow>
-     
+     <div className="contianer"></div>
      <div className="container body-container">
        
 <MDBRow className="align-right w">
