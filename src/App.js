@@ -36,7 +36,7 @@ import Event from './sub-view/event';
 import ComingEvent from './sub-view/coming-events';
 import News from './icons/other/2/newspaper.svg';
 import Input from  './input';
-
+import Slider from 'react-slick';
 
  
 
@@ -142,7 +142,13 @@ class App extends Component {
         })
     }
 
-
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1
+};
 
  
     return (
@@ -180,6 +186,7 @@ class App extends Component {
                
        </MDBRow>
      
+     <div className="container body-container">
        
 <MDBRow className="align-right w">
 
@@ -190,40 +197,49 @@ class App extends Component {
 </MDBRow>
 <div class="block-line"></div>
 <div className="container-fluid" style={{marginLeft:0,marginRight:"auto"}}>
-<MDBRow className="w-auto box-container">
+
             
 {/* <AliceCarousel autoPlay={false} mouseDragEnabled> */}
-             
-             
-             <MDBCol md="2">
-               
+             {/* <MDBRow className="align-right w"> */}
+             <Slider {...settings} className="box-container w">
+             {/* <MDBCol md="3" > */}
+               <div className="slider-item">
                <GalleryCard data={data} />
-             
-               </MDBCol>
+               </div>
+               {/* </MDBCol> */}
                 
-                  
-                  <MDBCol md="2">
+               <div className="slider-item">
+                  {/* <MDBCol md="3"> */}
                
                   <GalleryCard data={data} />
-                
-                  </MDBCol>
+                </div>
+                  {/* </MDBCol> */}
                   
-                  <MDBCol md="2">
-                 
+                  {/* <MDBCol md="3"> */}
+                  <div className="slider-item">
                   <GalleryCard data={data} />
-                
+                </div>
                   
-                  </MDBCol>
+                  {/* </MDBCol> */}
                
-                  <MDBCol md="2">
-                 
+                  {/* <MDBCol md="3"> */}
+                  <div className="slider-item">
                   <GalleryCard data={data}/>
-                 
-                 </MDBCol>
-
+                 </div>
+                 <div className="slider-item">
+                  <GalleryCard data={data}/>
+                 </div>
+                 <div className="slider-item">
+                  <GalleryCard data={data}/>
+                 </div>
+                 <div className="slider-item">
+                  <GalleryCard data={data}/>
+                 </div>
+                 {/* </MDBCol> */}
+                 </Slider>
      
                  {/* </AliceCarousel> */}
-            </MDBRow>
+            {/* </MDBRow> */}
 
              
     
@@ -277,24 +293,33 @@ class App extends Component {
 
 </MDBRow>
 <div class="block-line"></div>
+<div class="container">
 <div className="row">
-<div class="col-md-7">
-<MDBRow className="w-auto box-container country">
+<div style={{width:640}}>
+<MDBRow className="w-auto box-container">
 <Files/>
 <Files/>
 <Files/>
 </MDBRow>
 </div>
-<div class="col-md-4">
-<MDBRow className="w-auto box-container country">
-<span style={{margin:20}}>دورات</span>
+ 
+ <div class="col-md-3" style={{width:200 ,flex:"10%" , marginLeft:10 }}>
+
+ <span style={{margin:20}}>دورات</span>
+ <DrawMnhaj/>
+
+ </div>
+ <div class="col-md-3" style={{width:200 , flex:"10%" ,marginRight:10}}>
+
+ <span style={{margin:20}}>دورات</span>
 <DrawMnhaj/>
-</MDBRow>
-</div>
+
+ </div>
+ 
 
 
 </div>
-
+</div>
 <MDBRow className="align-right w">
 
 
@@ -305,9 +330,9 @@ class App extends Component {
 
 <div class="block-line"></div>
 <MDBRow style={{marginBottom:400}} className="w-auto">
-<Event margin={60}/>
-<Event margin={20}/>
-<Event margin={1}/>
+<Event margin={30}/>
+<Event margin={30}/>
+<Event margin={30}/>
 
 
 </MDBRow>
@@ -334,7 +359,7 @@ class App extends Component {
 
 
 
-
+</div>
 
 
 

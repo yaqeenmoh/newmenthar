@@ -12,7 +12,7 @@ const UniCard = (d) => {
 
 
   return (
-    <MDBCol md="2" className="uni-col" >
+    <MDBCol md="3" className="uni-col" >
     <CardLayout>
 
       <div className="align-right">

@@ -20,7 +20,7 @@ const Event = (d) => {
     <img src={Pic}/>
     <div className="event-content">
     <div className="row">
-    <div className="col-md-8 styleTime">
+    <div className="col-md-6 styleTime">
     <p style={{marginLeft:10 ,color:"#AEACAC"}}>٣ ديسمبر‏، الساعة ‏٨:٢٤ م‏ </p>
     </div>
     <div className="col-md-4">
@@ -28,7 +28,7 @@ const Event = (d) => {
  </p>
     </div>
     <div className="row">
-    <div style={{marginLeft:"auto",marginRight:"auto"}} className="col-md-8">
+    <div style={{marginLeft:"auto",marginRight:"auto"}} className="col-md-6">
     <p>
     نتائج التوجيهي ستعلن في الخامس من الشهر الجاري بعد انعقاد المؤتمر
 

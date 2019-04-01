@@ -26,15 +26,16 @@ const ComingEvent = (d) => {
 
   return (
     <MDBCol md="2" style={{marginLeft:80}}>
-   <div className="mnhaj">
+   <div className="coming-event">
    <div className="top">
    <div className="uni-part2">
 <p style={{color:"#8d8e8e" , fontSize:15}}>برعاية</p>
    <img className="uniPart-logo2" src={Zain}/>
    </div>
-   <div className="like">
+   <div>
+   <img className="share" src={Share}/>
    <img className="like" src={like}/>
-   <img className="like" src={Share}/>
+
    </div>
    <p class="event-coming-title">كرنفال عينك على المستقبل</p>
    <img className="topImg" src={Persons}/>
@@ -47,7 +48,7 @@ const ComingEvent = (d) => {
    <div className="row">
    <div class="col-md-12">
    <div class="row">
-   <div class="col-md-10">
+   <div class="col-md-8">
    <p style={{color:"#535962" , fontSize:15}}>السبت -٣ ديسمبر‏، ‏٢٠١٩م‏ </p>
    </div>
    <div class="col-md-2">
@@ -58,7 +59,7 @@ const ComingEvent = (d) => {
    {/*  */}
    <div class="col-md-12">
    <div class="row">
-   <div class="col-md-10">
+   <div class="col-md-8">
    <p style={{color:"#535962" , fontSize:15}}> ‏٨:٢٤ مساءً‏  </p>
    </div>
    <div class="col-md-2">
@@ -69,7 +70,7 @@ const ComingEvent = (d) => {
    {/*  */}
    <div class="col-md-12">
    <div class="row">
-   <div class="col-md-10">
+   <div class="col-md-8">
    <p style={{color:"#535962" , fontSize:15 }}>عمان-مجمع الحسين للأعمال-زين زينك</p>
    </div>
    <div class="col-md-2">
@@ -80,10 +81,10 @@ const ComingEvent = (d) => {
    {/* 
  */}
    <div className="row">
-   <div className="col-md-6">
+   <div className="col-md-4">
    <input type="button" className="btn-view not"  value="إستقبال إشعارات"/>
    </div>
-   <div className="col-md-6">
+   <div className="col-md-4">
    <input type="button" className="btn-add" value="تسجيل حضور"/>
    </div>
    </div>

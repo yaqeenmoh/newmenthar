@@ -10,10 +10,10 @@ const CountryCard = (d) => {
 
 const style = {
     background: "url("+d.data.url+")",
-    width:200,
+ width:183,
     height:350,
     position:"relative",
-    backgroundSize :"200px 350px"
+    backgroundSize :"183px 350px"
 }
 
 

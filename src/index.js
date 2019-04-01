@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Input from './input';
- 
+import Files from './sub-view/files'; 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App/>, document.getElementById('root'));

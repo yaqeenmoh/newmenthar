@@ -18,7 +18,7 @@ const Mnhaj = (d) => {
 
 
   return (
-    <MDBCol md="4">
+    <div style={{width:200}}>
    <div className="mnhaj">
    <div className="top">
    <div className="uni-part">
@@ -38,10 +38,10 @@ const Mnhaj = (d) => {
    <p style={{marginRight:10,fontWeight:'bold' }} className="course-title">{d.data.title}</p>
    <p style={{marginRight:10,color: "#535962",fontFamily: "Noto Kufi Arabic"}}>{d.data.desc}</p>
    <div className="row">
-   <div className="col-md-6">
+   <div className="col-md-4" >
    <input type="button" className="btn-view" value="تصفح الدورة"/>
    </div>
-   <div className="col-md-6">
+   <div className="col-md-4" >
    <input type="button" className="btn-add" value="إضافة لدوراتي"/>
    </div>
    </div>
@@ -50,7 +50,7 @@ const Mnhaj = (d) => {
        
 
    
-    </MDBCol>
+   </div>
   );
 };
 
