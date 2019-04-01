@@ -12,9 +12,9 @@ import facebook from './icons/other/2/facebook-logo.svg'
 const Footer = props => {
   return (
       <div className="row" style={{marginTop:50}}>
-      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+      <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     <h4>من نحن</h4>
-                    <ul class="list-unstyled">
+                    <ul  className="list-unstyled direction">
                         <li><a href="#">جو أكاديمي</a></li>
                         <li><a href="#">الشروط و الأحكام</a></li>
                         <li><a href="#">سياسة الخصوصية</a></li>
@@ -34,7 +34,7 @@ const Footer = props => {
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     <h4>الدعم</h4>
-                    <ul class="list-unstyled">
+                    <ul className="list-unstyled">
                         <li><a href="#">اتصل بنا</a></li>
                         <li><a href="#">الأسئلة الأكثر شيوعا</a></li>
                         <li><a href="#">منظار</a></li>
@@ -45,7 +45,7 @@ const Footer = props => {
                         <li><a href="#">المدونة</a></li>
                     </ul>
                 </div>
-<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+<div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     <h4>روابط سريعة</h4>
                     <ul class="list-unstyled">
                         <li><a href="#">جروبات جوأكاديمي</a></li>
@@ -62,7 +62,7 @@ const Footer = props => {
                 
                 
 
-                <div class="apps">
+                <div classNames="apps">
                     <h4>حمل تطبيق جو أكاديمي على موبايلك</h4>
                     <a href="https://play.google.com/store/apps/details?id=tawjihi.joacademy.ns4it.newjo1"><img src={playstore}/></a>
                     <a href="#"><img src={appstore}/></a>

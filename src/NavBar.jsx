@@ -62,14 +62,14 @@ class NavBar extends Component {
             <span className="white-text mr-2"> لين قطاونة</span>
           </MDBDropdownToggle>
           <MDBDropdownMenu>
-            <MDBDropdownItem href="#!"> مفضلتي</MDBDropdownItem>
+            <MDBDropdownItem href="#!" style={{color:"#327BF9"}}> مفضلتي</MDBDropdownItem>
             <MDBDropdownItem href="#!"> دوراتي</MDBDropdownItem>
             <MDBDropdownItem href="#!"> جروباتي</MDBDropdownItem>
             <MDBDropdownItem href="#!"> ملفاتي</MDBDropdownItem>
           </MDBDropdownMenu>
         </MDBDropdown>
         <MDBCol md="6" className="mt-3">
-          <MDBInput hint=" ابحث عن معلمين, دورات ,أوراق عمل  " type="text"  className="white-text text-right primary-color-dark pr-4 inputStyle" containerClass="active-primary-color-dark active-primary-color-dark-2 mt-0 mb-3" />
+          <MDBInput hint=" ابحث عن معلمين, دورات ,أوراق عمل  " type="text"  className="white text-right primary-color-dark pr-4 inputStyle" containerClass="active-primary-color-dark active-primary-color-dark-2 mt-0 mb-3" />
         </MDBCol>
         <MDBNavbarNav right>
         <MDBNavbarBrand>

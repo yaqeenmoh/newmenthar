@@ -65,11 +65,11 @@ const uniCardData  = [
   title :" جامعة العلوم والتكنولوجيا",
   number : 50
 },
-// {
-//   imgUrl :LOGO_FOOTER,
-//   title :"الجامعة الهاشمية ",
-//   number : 50
-// },
+{
+  imgUrl :LOGO_FOOTER,
+  title :"الجامعة الهاشمية ",
+  number : 50
+},
 {
 
   imgUrl:psut,
@@ -149,6 +149,14 @@ var settings = {
   slidesToShow: 4,
   slidesToScroll: 1
 };
+var settings2={
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1
+
+}
 
  
     return (
@@ -265,7 +273,44 @@ var settings = {
 </MDBRow>
 <div class="block-line"></div>
 <MDBRow className="w-auto box-container uni">
-<DrawUni/>
+<Slider {...settings2} className="box-container w">
+             {/* <MDBCol md="3" > */}
+               <div className="slider-item">
+               <UniCard data={uniCardData} />
+               </div>
+               {/* </MDBCol> */}
+                
+               <div className="slider-item">
+                  {/* <MDBCol md="3"> */}
+               
+                  <UniCard data={uniCardData} />
+                </div>
+                  {/* </MDBCol> */}
+                  
+                  {/* <MDBCol md="3"> */}
+                  <div className="slider-item">
+                  <UniCard data={uniCardData} />
+                </div>
+                  
+                  {/* </MDBCol> */}
+               
+                  {/* <MDBCol md="3"> */}
+                  <div className="slider-item">
+                  <UniCard data={uniCardData}/>
+                 </div>
+                 <div className="slider-item">
+                  <GalleryCard data={uniCardData}/>
+                 </div>
+                 <div className="slider-item">
+                  <UniCard data={uniCardData}/>
+                 </div>
+                 <div className="slider-item">
+                  <UniCard data={uniCardData}/>
+                 </div>
+                 {/* </MDBCol> */}
+                 </Slider>
+     
+
 </MDBRow>
 
 
@@ -280,6 +325,7 @@ var settings = {
 <div class="block-line"></div>
 <MDBRow className="w-auto box-container country">
 <DrawCountry/>
+     
 </MDBRow>
 
 

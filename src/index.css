@@ -87,6 +87,7 @@ margin-bottom:20px;
   justify-content: space-between;
   padding: .5rem 1rem;
   background-color: #003257;
+  color:white;
 }
 .form-control {
   display: block;
@@ -191,4 +192,7 @@ margin-bottom:20px;
   padding-right: 15px;
   padding-left: 15px;
   color: #ffff;
+}
+* {
+  box-sizing: border-box;
 }
