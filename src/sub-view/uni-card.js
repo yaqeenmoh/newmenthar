@@ -13,6 +13,7 @@ const UniCard = (d) => {
 
   return (
     <MDBCol md="3" className="uni-col" >
+   
     <CardLayout>
 
       <div className="align-right">
@@ -31,6 +32,7 @@ const UniCard = (d) => {
         <span className="jr-link card-link"><i className="zmdi zmdi-money zmdi-hc-fw"/>Avarage Cost</span> */}
       </div>
     </CardLayout>
+ 
     </MDBCol>
   );
 };

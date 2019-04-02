@@ -120,7 +120,10 @@ class App extends Component {
       
      return uniCardData.map((item)=>{
       return (
+        <div className="slider-item">
         <UniCard data={item}/>
+        </div>
+       
       )
       })
       
@@ -272,46 +275,32 @@ var settings2={
 
 </MDBRow>
 <div class="block-line"></div>
-<MDBRow className="w-auto box-container uni">
+ <MDBRow className="w-auto box-container uni">
 <Slider {...settings2} className="box-container w">
              {/* <MDBCol md="3" > */}
-               <div className="slider-item">
-               <UniCard data={uniCardData} />
-               </div>
-               {/* </MDBCol> */}
-                
-               <div className="slider-item">
-                  {/* <MDBCol md="3"> */}
-               
-                  <UniCard data={uniCardData} />
-                </div>
-                  {/* </MDBCol> */}
-                  
-                  {/* <MDBCol md="3"> */}
-                  <div className="slider-item">
-                  <UniCard data={uniCardData} />
-                </div>
-                  
-                  {/* </MDBCol> */}
-               
-                  {/* <MDBCol md="3"> */}
-                  <div className="slider-item">
-                  <UniCard data={uniCardData}/>
-                 </div>
-                 <div className="slider-item">
-                  <GalleryCard data={uniCardData}/>
-                 </div>
-                 <div className="slider-item">
-                  <UniCard data={uniCardData}/>
-                 </div>
-                 <div className="slider-item">
-                  <UniCard data={uniCardData}/>
-                 </div>
+             <div className="slider-item">
+             <UniCard data={uniCardData[0]}/>
+             </div>
+             <div className="slider-item">
+             <UniCard data={uniCardData[1]}/>
+             </div>
+             <div className="slider-item">
+             <UniCard data={uniCardData[2]}/>
+             </div>
+             <div className="slider-item">
+             <UniCard data={uniCardData[3]}/>
+             </div>
+             <div className="slider-item">
+             <UniCard data={uniCardData[4]}/>
+             </div>
+             
+
+         
                  {/* </MDBCol> */}
                  </Slider>
      
 
-</MDBRow>
+ </MDBRow>
 
 
 
