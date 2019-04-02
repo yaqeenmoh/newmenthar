@@ -156,7 +156,7 @@ var settings2={
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 2,
   slidesToScroll: 1
 
 }
