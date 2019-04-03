@@ -1,6 +1,6 @@
 import React from 'react';
 import Pic from '../icons/other/pic1.png';
-
+import CardLayout from '../CardLayout';
 import {
   
      MDBCol, MDBRow
@@ -14,8 +14,9 @@ const Event = (d) => {
 
 
   return (
-    <MDBCol md="3" style={{margin:25 , marginLeft : d.margin }}>
-
+    <div style={{height:400}}>
+    <MDBCol md="3" style={{ marginLeft : d.data.margin }}>
+  <CardLayout>
     <div className="event-pic">
     <img src={Pic}/>
     <div className="event-content">
@@ -43,9 +44,10 @@ const Event = (d) => {
     </div>
     </div>
    
-
+    </CardLayout>
    
     </MDBCol>
+    </div>
   );
 };
 

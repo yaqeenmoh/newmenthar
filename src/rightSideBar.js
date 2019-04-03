@@ -99,6 +99,8 @@ this.state = {open : false , open2 : false , open3 : false};
 				<GalleryCard2 data={{Imgurl :telescope,text :"منظار"  }}/>
 				</div>
 				</div>
+				<br/>
+				<div class="row" style={{marginLeft:1 , backgroundColor:"#f8f8f8" , paddingBottom:10 , paddingRight:10}}>
      <div className="slideNav">
 	 <div className="menu1">
 	 <img src={Book} />
@@ -170,6 +172,7 @@ this.state = {open : false , open2 : false , open3 : false};
 		 
 		 </div>
            </div>
+		   </div>
 			</div>)
 	};
 }

@@ -76,9 +76,9 @@ box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.16);
 }
 
 .menu-right{
-  -webkit-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
--moz-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
+  -webkit-box-shadow: -3px -1px 2px 0px rgba(196,194,196,1);
+-moz-box-shadow: -3px -1px 2px 0px rgba(196,194,196,1);
+box-shadow: -3px -1px 2px 0px rgba(196,194,196,1);
 width:170px;
 height:3650px;
 }
@@ -219,10 +219,11 @@ color: #535962;
 
 .form-control{
 
-  width: 1042px;
+  width: 1200px;
 height: 50px;
 background: transparent;
 color: #fff;
+
 }
 .inputStyle{
 
@@ -294,9 +295,13 @@ background: linear-gradient(transparent, #327BF9);
     margin:0px !important;
     
   }
+  .hover-country { transition: all .2s ease-in-out; }
+  .hover-country:hover { transform: scale(1.05);}
+ 
+   
 .mnhaj , .coming-event{
   width:204px;
-  height:350px;
+ 
   border-radius: 30px;
   background-color: white;
   -webkit-box-shadow: 0px -1px 2px 4px rgba(243,243,243,1);
@@ -616,7 +621,7 @@ margin-top:20px;
   margin-right:10px;
 }
 .menu-right {
-  box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
+  box-shadow: -3px -1px 2px 0px rgba(196,194,196,1);
   width: 220px;
   height: 3550px;
 }
@@ -645,6 +650,7 @@ color: #aeacac;
   display:inline !important;
   border-radius : 0 !important;
   background-color:white !important;
+  
 
 
 }
@@ -680,15 +686,16 @@ color: #aeacac;
 .s-btn{
   margin-right: 0 !important;
   padding-right: 0 !important;
-  margin-left:0 !important;
+  margin-left:240px !important;
   padding-left:0 !important;
 }
 .form-container {
   position :relative;
-  background-size: 1000px 400px;
+  background-size: 1100px 500px;
   background-repeat: no-repeat;
   height:500px;
-  width:1000px;
+  width:1100px;
+  margin-left:20px;
 }
 .img-text{
   word-wrap: break-word;
@@ -728,4 +735,43 @@ color: #aeacac;
 .slick-dots li.slick-active button:before {
   opacity: .75;
   color: #327bf9;
+}
+.inc-height{
+  height:400px !important;
+}
+.header-input ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    white;
+}
+.header-input :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    white;
+ opacity:  1;
+}
+.header-input ::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    white;
+ opacity:  1;
+}
+.header-input :-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:    white;
+}
+.header-input ::-ms-input-placeholder { /* Microsoft Edge */
+ color:    white;
+}
+
+.header-input ::placeholder { /* Most modern browsers support this now. */
+ color:    white;
+}
+.header-input{
+  background-color:  #327BF9  !important;
+  color:white !important;
+  direction:rtl;
+  text-align: right;
+}
+::placeholder{
+  color:white !important;
+}
+input::placeholder{
+  color:white !important;
+}
+.header-input input::placeholder{
+  color:white !important;
 }

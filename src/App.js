@@ -110,32 +110,28 @@ const mnjahItems = [
 // price:"30"},
 
 ]
+const eventItmes = [{
+  margin:30
+},
+{
+  margin:30
+},
+{
+  margin:30
+},
+]
+const commingEventItmes =[{},{},
+  {},{}
+]
 class App extends Component {
 
 
 
   render() {
 
-    const DrawUni = () =>{
-      
-     return uniCardData.map((item)=>{
-      return (
-        <div className="slider-item">
-        <UniCard data={item}/>
-        </div>
-       
-      )
-      })
-      
-    }
+   
 
-    const DrawCountry  =()=>{
-      return countryItems.map((item)=>{
-        return (
-          <CountryCard data={item}/>
-        )
-        })
-    }
+  
 
     const DrawMnhaj  =()=>{
       return mnjahItems.map((item)=>{
@@ -156,11 +152,18 @@ var settings2={
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 2,
+  slidesToShow: 4,
   slidesToScroll: 1
 
 }
 
+var settingEvent ={
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1
+}
  
     return (
      
@@ -173,12 +176,12 @@ var settings2={
 <RightSideBar/>
 
             
-             <MDBCol className="m-3">
+             <MDBCol className="m-12">
                <Segment raised>
                <div className="rgba">
-               <div className="container">
+               <div className="container-fulid">
                <div className="row">
-               <div style={{backgroundImage : "url("+image1+")"}} className="container form-container">
+               <div style={{backgroundImage : "url("+image1+")"}} className="form-container">
               
                
                {/* <img src={image1} style={{height:400, marginRight:120}} /> */}
@@ -277,23 +280,16 @@ var settings2={
 <div class="block-line"></div>
  <MDBRow className="w-auto box-container uni">
 <Slider {...settings2} className="box-container w">
-             {/* <MDBCol md="3" > */}
-             <div className="slider-item">
-             <UniCard data={uniCardData[0]}/>
-             </div>
-             <div className="slider-item">
-             <UniCard data={uniCardData[1]}/>
-             </div>
-             <div className="slider-item">
-             <UniCard data={uniCardData[2]}/>
-             </div>
-             <div className="slider-item">
-             <UniCard data={uniCardData[3]}/>
-             </div>
-             <div className="slider-item">
-             <UniCard data={uniCardData[4]}/>
-             </div>
+          
              
+            {  uniCardData.map((item)=>{
+      return (
+        <div className="slider-item">
+        <UniCard data={item}/>
+        </div>
+       
+      )
+      })}
 
          
                  {/* </MDBCol> */}
@@ -312,10 +308,18 @@ var settings2={
 
 </MDBRow>
 <div class="block-line"></div>
-<MDBRow className="w-auto box-container country">
-<DrawCountry/>
-     
+<MDBRow className="w-auto box-container">
+<Slider {...settings2} className="box-container w">
+{ countryItems.map((item)=>{
+  return (
+    <div className="slider-item">
+    <CountryCard data={item}/>
+    </div>
+  )
+  })}
+     </Slider>
 </MDBRow>
+
 
 
 
@@ -337,16 +341,16 @@ var settings2={
 <Files/>
 </MDBRow>
 </div>
- 
+
  <div class="col-md-3" style={{width:200 ,flex:"10%" , marginLeft:10 }}>
 
- <span style={{margin:20}}>دورات</span>
+ <span style={{margin:20, color:"black" , marginBottom:5}}>دورات</span>
  <DrawMnhaj/>
 
  </div>
  <div class="col-md-3" style={{width:200 , flex:"10%" ,marginRight:10}}>
 
- <span style={{margin:20}}>دورات</span>
+ <span style={{margin:20 , color:"black" , marginBottom:5}}>دورات</span>
 <DrawMnhaj/>
 
  </div>
@@ -355,6 +359,7 @@ var settings2={
 
 </div>
 </div>
+<br/>
 <MDBRow className="align-right w">
 
 
@@ -364,12 +369,20 @@ var settings2={
 </MDBRow>
 
 <div class="block-line"></div>
-<MDBRow style={{marginBottom:400}} className="w-auto">
-<Event margin={30}/>
-<Event margin={30}/>
-<Event margin={30}/>
+<MDBRow className="w-auto box-container">
+<Slider {...settingEvent} className="box-container w">
 
 
+
+ {eventItmes.map((item)=>{
+  return (
+    <div className="slider-item">
+    <Event data={item}/>
+    </div>
+  )
+  })}
+
+</Slider>
 </MDBRow>
 
 
@@ -382,13 +395,24 @@ var settings2={
 </MDBRow>
 
 <div class="block-line"></div>
-<MDBRow style={{marginBottom:200}} className="w-auto">
-<ComingEvent/>
-<ComingEvent/>
-<ComingEvent/>
-<ComingEvent/>
+<MDBRow style={{marginBottom:80}} className="w-auto">
+<Slider {...settings2} className="box-container w-auto">
 
+    <div className="slider-item">
+    <ComingEvent/>
+    </div>
+    <div className="slider-item">
+    <ComingEvent/>
+    </div>
+    <div className="slider-item">
+    <ComingEvent/>
+    </div>
+    <div className="slider-item">
+    <ComingEvent/>
+    </div>
+ 
 
+</Slider>
 </MDBRow>
 
 

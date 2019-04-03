@@ -19,9 +19,9 @@ const style = {
 
 
   return (
-    <MDBCol md="2">
+    <MDBCol md="2" >
    
-        <div style={style}>
+        <div style={style} className="hover-country">
         <img className="flag" src={d.data.flag}/>
         <span className="flag-title">{d.data.title}</span>
         <div className="grad">

@@ -25,7 +25,8 @@ const ComingEvent = (d) => {
 
 
   return (
-    <MDBCol md="2" style={{marginLeft:80}}>
+    <div style={{height:400}}>
+    <MDBCol md="2" style={{marginLeft:20}}>
    <div className="coming-event">
    <div className="top">
    <div className="uni-part2">
@@ -95,6 +96,7 @@ const ComingEvent = (d) => {
 
    
     </MDBCol>
+    </div>
   );
 };
 
