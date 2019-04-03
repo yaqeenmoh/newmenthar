@@ -4,8 +4,9 @@ import './index.css';
 import App from './App';
 import Files from './sub-view/files'; 
 import * as serviceWorker from './serviceWorker';
+import Qoboolat from './Qoboolat/Qoobolat'
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<Qoboolat/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

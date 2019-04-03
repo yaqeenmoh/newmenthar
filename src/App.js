@@ -6,7 +6,6 @@ import {
   MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
   MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBContainer, MDBIcon, MDBInput, MDBCol, MDBRow, MDBNav
 } from "mdbreact";
-import LeftSideBar from './LeftSideBar';
 import image1 from './icons/sky_2.png';
 import image2 from './icons/drawing.svg';
 import UniImage from './icons/uni.svg';

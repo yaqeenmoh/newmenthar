@@ -775,3 +775,7 @@ input::placeholder{
 .header-input input::placeholder{
   color:white !important;
 }
+.box-container {
+  padding: 20px;
+  cursor: grab;
+}
