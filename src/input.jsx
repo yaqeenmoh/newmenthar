@@ -40,18 +40,25 @@ export default class Input extends Component {
 <div class="col-md-1 input-col search-input">
 <img style={{width:20,height:20 , marginLeft:10}} src={Magn}/>
 
+
+
 <span className="search-text" style={{
 fontFamily: "Noto Kufi Arabic",
 fontWeight: "normal",
 fontSize: 20,
-color: "#fff"
+color: "#fff",
+background: "#034173",
+width: 48.01,
+height: 32.3
+
 }}> بحث</span>
 </div>
 
 <div className="col-md-4 input-col">
 
+
 <input type="search"
-className="form-control custom-control-text" style={{color:" #d1d1d1",fonFamily: "Noto Kufi Arabic"}}
+className="form-control custom-control-text" style={{color:" #d1d1d1",fonFamily: "Noto Kufi Arabic",fontWeight:"normal",textAlign:"right"}}
          placeholder=" أين تريد أن تدرس (البلد،الجامعة)؟    "
          ref={input => this.search = input}
          onChange={this.handleInputChange}
@@ -60,7 +67,7 @@ className="form-control custom-control-text" style={{color:" #d1d1d1",fonFamily:
 
        <div class="col-md-4 input-col">
        <input type="search"
-className="form-control custom-control-text2"
+className="form-control custom-control-text2" style={{color:" #d1d1d1",fonFamily: "Noto Kufi Arabic",fontWeight:"normal",textAlign:"right"}}
          placeholder="  ماذا تريد أن تدرس (التخصص) ؟ "
          ref={input => this.search = input}
          onChange={this.handleInputChange}
@@ -69,14 +76,17 @@ className="form-control custom-control-text2"
        </div>
  
         <p>{this.state.text}</p>
+   
 
 <div>
   <div className="row" >
-  <div className="col-md-4 s-btn" style={{fontFamily: "Noto Kufi Arabic",fontSize: 18,color:" #d1d1d1"}}>
-<button className="search-btn" >ابحث عن تخصصات حسب شخصيتي <img style={{width:20,height:20 , marginLeft:10}} src={icc}/></button>
+  <div className="col-md-4 s-btn" style={{fontFamily: "Noto Kufi Arabic",fontSize: 18,color:" #034173"}}>
+<button className="search-btn" >ابحث عن تخصصات حسب شخصيتي <img style={{width:20,height:29.44 , marginLeft:10,background: "transparent"}} src={icc}/></button>
 </div>
 <div className="col-md-4" style={{fontFamily: "Noto Kufi Arabic",fontSize: 18,color:" #d1d1d1"}}>
-<button className="search-btn">ابحث عن تخصصات حسب معدلي<img style={{width:20,height:20 , marginLeft:10,fontFamily: "Noto Kufi Arabic",fontSize: 18,color:" #d1d1d1"}} src={Brain}/></button>
+<button className="search-btn">
+ابحث عن تخصصات حسب معدلي<img style={{width:20,height:20 , marginLeft:10,fontFamily: "Noto Kufi Arabic",fontSize: 18,color:" #195DB4",background: "transparent"}}
+ src={Brain}/></button>
 </div>
 </div>
 </div>
