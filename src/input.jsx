@@ -71,9 +71,9 @@ className="form-control custom-control-text2"
         <p>{this.state.text}</p>
 
 <div>
-  <div className="row">
-  <div className="col-md-4 s-btn">
-<button className="search-btn">ابحث عن تخصصات حسب شخصيتي <img style={{width:20,height:20 , marginLeft:10}} src={icc}/></button>
+  <div className="row" >
+  <div className="col-md-4 s-btn" style={{fontFamily: "Noto Kufi Arabic",fontSize: 18,color:" #d1d1d1"}}>
+<button className="search-btn" >ابحث عن تخصصات حسب شخصيتي <img style={{width:20,height:20 , marginLeft:10}} src={icc}/></button>
 </div>
 <div className="col-md-4" style={{fontFamily: "Noto Kufi Arabic",fontSize: 18,color:" #d1d1d1"}}>
 <button className="search-btn">ابحث عن تخصصات حسب معدلي<img style={{width:20,height:20 , marginLeft:10,fontFamily: "Noto Kufi Arabic",fontSize: 18,color:" #d1d1d1"}} src={Brain}/></button>

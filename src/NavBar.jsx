@@ -22,81 +22,125 @@ class NavBar extends Component {
       collapseID: prevState.collapseID !== collapseID ? collapseID : ""
     }));
 
-  render() {
-    return (
-      
-      <MDBNavbar color="primary-color" dark expand="md">
-<BrowserRouter>
-        <MDBNav>
-          <MDBNavItem>
-                    <a href="#!"><img className="margin" src={questionmark}></img></a> 
-          </MDBNavItem>
-          <MDBNavItem>
-          <a href="#!"> <img className="margin"  src={notification1}></img></a>
-          </MDBNavItem>
-          <MDBNavItem>
-          <a href="#!"><img
-          src={chat1}
-          alt="" className="margin" >
-        </img></a>
-          
-          </MDBNavItem>
-        </MDBNav>
-        </BrowserRouter>
-        <img
-          src={path}
-          alt=""
-          width="38.15px"
-          height="35.02px"
-          className="rounded-circle "
-          opacity="0.75"
-        >
-        </img>
+    render() {
 
-
-
-
-
-        <MDBDropdown>
-          <MDBDropdownToggle nav caret className="white-text">
-            <span className="white-text mr-2"> لين قطاونة</span>
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem href="#!" style={{color:"#327BF9"}}> مفضلتي</MDBDropdownItem>
-            <MDBDropdownItem href="#!"> دوراتي</MDBDropdownItem>
-            <MDBDropdownItem href="#!"> جروباتي</MDBDropdownItem>
-            <MDBDropdownItem href="#!"> ملفاتي</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBCol md="6">
-          <input placeholder="ابحث عن معلمين, دورات ,أوراق عمل" type="text"  className="form-control custom-control-text2 header-input"  style={{color:"white"  , opacity:1 }} />
-        </MDBCol>
-        <MDBNavbarNav right>
-        <MDBNavbarBrand>
-            <MDBContainer>
-              <MDBRow>
-              <img
-          src={Path2}
-          alt=""
-          width="50px"
-          height="50px"
-          className="rounded-circle "
-        >
-        </img>
-
-                <MDBCol className="m-0 pl-2"><strong className="white-text">JO | Academy</strong>
-                  <h6>بالاشتراك مع @Zain</h6></MDBCol>
-              </MDBRow>
-            </MDBContainer>
-          </MDBNavbarBrand>
-
-        </MDBNavbarNav>
-
-      </MDBNavbar>
-
-
-    );
-  }
+      return (
+     
+     
+      <nav className="navbar navbar-dark navbar-expand-md primary-color"
+      role="navigation">
+     
+      <div className="header-desktop-leftside col-md-4">
+     
+      <ul className="header-desktop-profileicons nav col-md-6">
+     
+     
+      <li className="nav-item"><a
+      href="#!"><img
+      className="margin"
+      src="/static/media/question-mark.ec349e0f.svg"></img>
+     
+      </a></li>
+     
+      <li className="nav-item"><a
+      href="#!">
+      <img className="margin"
+      src={questionmark}></img></a></li>
+     
+      <li className="nav-item"><a
+      href="#!"><img
+      src={notification1}alt=""
+      className="margin"></img>
+     
+      </a></li>
+     
+      </ul>
+     
+      <div className="header-desktop-profile col-md-6">
+     
+      <img src="/static/media/girl.6b23eaa1.png"
+      alt=""style=
+      {{opacity:0.75,width:38.15,
+      height:35.02}}
+      className="rounded-circle header-desktop-profilepic "
+      />
+     
+      <div className="dropdown"><a
+      aria-haspopup="true"
+      href="#" 
+      className="dropdown-toggle nav-link white-text"
+      aria-expanded="false"><span
+      className="white-text mr-2"> لين قطاونة</span></a>
+     
+      <div tabindex="-1"
+      role="menu"
+      aria-hidden="true"
+      className="dropdown-menu">
+     
+      <a href="#!"
+      style={{color:
+      "#NaN7bf9"}}
+      className="dropdown-item"> مفضلتي</a>
+     
+      <a href="#!"
+      tabindex="0"
+      className="dropdown-item"> دوراتي</a><a
+      href="#!" 
+      tabindex="0" 
+      className="dropdown-item"> جروباتي</a><a
+      href="#!" 
+      tabindex="0" 
+      className="dropdown-item"> ملفاتي</a>
+     
+      </div>
+     
+      </div>
+     
+      </div>
+     
+      </div>
+     
+      <div className="col-md-6">
+     
+      <input placeholder="ابحث عن معلمين, دورات ,أوراق عمل"
+      type="text"
+      className="form-control custom-control-text2 header-input"
+      style={{color: "white", opacity: 1}}/>
+     
+      </div><ul className="navbar-nav ml-auto col-md-2"><div
+      className="navbar-brand"><div
+      className="container">
+     
+      <div className="row"><img
+      src={path}
+      alt="" 
+      className="rounded-circle" 
+      style= {{width:50,
+      height:50}}/>
+     
+     
+      </div>
+     
+      </div>
+     
+      </div>
+     
+     
+     
+      </ul>
+     
+     
+     
+     
+      </nav>
+     
+     
+     
+     
+     
+      );
+     
+      }
 }
 
 export default NavBar;
