@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Files from './sub-view/files'; 
 import * as serviceWorker from './serviceWorker';
+import Qoboolat from './Qoboolat/Qoobolat'
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
