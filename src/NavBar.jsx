@@ -103,7 +103,7 @@ class NavBar extends Component {
     
      </div>
      
-     <div className="header-desektop-search col-md-5">
+     <div className="header-desektop-search col-md-5" style={{position:"realative"}}>
      
     
     
@@ -111,7 +111,12 @@ class NavBar extends Component {
       type="text"
       className="form-control custom-control-text2 header-input customInput"
       style={{color: "white", opacity: 1}}/>
-       <i class="fa fa-search searchIcon"></i>
+       <a
+     href="#!"><img className="marginright"
+     
+     src={magnify}/>
+    
+     </a>
      
    
      
