@@ -785,12 +785,14 @@ input::placeholder{
 }
 
 
-.marginright{
 
- 
-    margin-right: 11px !important;
 
+  .marginright {
+    margin-right: 18px !important;
+    margin-top: 4px;
 }
+
+
 .navbar.responsive {
 
   position: relative;
@@ -832,3 +834,7 @@ opacity: 0.6;
 }
 
 
+.float{
+
+  float:right;
+}

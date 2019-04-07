@@ -8,10 +8,11 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import path  from './icons/other/2/Group 8838.png' ;
 import Path2 from './icons/Path35.svg'
+import Girl  from './icons/girl.png' ;
 import chat1 from './icons/chat (1).svg'
 import notification1 from './icons/notification (1).svg'
 import questionmark from './icons/question-mark.svg'
-
+import magnify from './icons/other/2/magnifying-glass.svg'
 class NavBar extends Component {
   state = {
     collapseID: ""
@@ -35,7 +36,7 @@ class NavBar extends Component {
      <li className="nav-item"><a
      href="#!"><img className="marginright"
      
-     src={questionmark}></img>
+     src={questionmark}/>
     
      </a>
      </li>
@@ -43,17 +44,28 @@ class NavBar extends Component {
      <li className="nav-item"><a
      href="#!">
      <img className="marginright"
-     src={chat1}></img></a>
+     src={notification1}/></a>
      </li>
     
      <li className="nav-item"><a
      href="#!"><img
-     src={notification1}alt=""
-     className="marginright"></img>
+     src={chat1}alt=""
+     className="marginright"/>
     
      </a>
      </li>
+     
      <li className="nav-item">
+     <div className="row">
+     <img
+          src={Girl}
+          alt=""
+          width="40px"
+          height="100%"
+          className="rounded-circle "
+          opacity="0.75"
+        />
+        
      <div ><a
       aria-haspopup="true"
       href="#" 
@@ -82,41 +94,48 @@ class NavBar extends Component {
       className="dropdown-item"> ملفاتي</a>
       
       </div>
-<<<<<<< HEAD
-      
-=======
+      </div>
   
 
->>>>>>> bf1cd8c34311a5c61d78f743122aef3fd8087dc5
       </div>
       </li>
      </ul>
     
      </div>
      
-     <div className="header-desektop-search col-md-6">
+     <div className="header-desektop-search col-md-5">
      
     
-     
+    
       <input placeholder="ابحث  عن  دورات , معملين , أوراق عمل"
       type="text"
       className="form-control custom-control-text2 header-input customInput"
       style={{color: "white", opacity: 1}}/>
+       <i class="fa fa-search searchIcon"></i>
      
-      
+   
      
       </div>
      
-<<<<<<< HEAD
-     <div className="right-nav-bar">
-     <ul className="navbar-nav ml-auto col-md-2"><div
+     <div className="col-md-3">
+     <ul className="navbar-nav float" ><div
       className="navbar-brand"><div
       className="container">
       
-      <div className="row"><img
-      src={path}/>
+      <div className="row">
+      <img
+          src={path}
+          alt=""
+style={{width:" 227.78px",
+height:" 58.8px",
+background: "transparent",
+float:"right"}}
+          
+
+       / >
+        
       
-     
+      
       </div>
       
       </div>
@@ -127,29 +146,6 @@ class NavBar extends Component {
       
       </ul>
      </div>
-=======
-      <MDBNavbarNav right>
-        <MDBNavbarBrand>
-            <MDBContainer>
-              <MDBRow>
-              <img
-          src={path}
-          alt=""
-         
-          width=" 227.78px"
-          height=" 58.8px"
-          background= "transparent"
-         
-        >
-        </img>
-
-               
-              </MDBRow>
-            </MDBContainer>
-          </MDBNavbarBrand>
-
-        </MDBNavbarNav>
->>>>>>> bf1cd8c34311a5c61d78f743122aef3fd8087dc5
     
      
       </nav>
