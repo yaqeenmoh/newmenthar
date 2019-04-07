@@ -6,7 +6,7 @@ import {
 } from "mdbreact";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import path  from './icons/girl.png' ;
+import path  from './icons/other/2/Untitled.png' ;
 import Path2 from './icons/Path35.svg'
 import chat1 from './icons/chat (1).svg'
 import notification1 from './icons/notification (1).svg'
@@ -23,8 +23,8 @@ class NavBar extends Component {
     }));
 
     render() {
-
       return (
+<<<<<<< HEAD
       
       
       <nav className="navbar navbar-dark navbar-expand-md primary-color"
@@ -66,6 +66,38 @@ class NavBar extends Component {
       />
       
       <div className="dropdown"><a
+=======
+        <header>
+          <div className="topnav">
+          <nav className="navbar navbar-dark navbar-expand-md primary-color"
+      role="navigation">
+       <div className="header-desktop-leftside col-md-4">
+       <ul className="header-desktop-profileicons nav col-md-6">
+     
+     
+     <li className="nav-item"><a
+     href="#!"><img className="marginright"
+     
+     src={questionmark}></img>
+    
+     </a>
+     </li>
+    
+     <li className="nav-item"><a
+     href="#!">
+     <img className="marginright"
+     src={chat1}></img></a></li>
+    
+     <li className="nav-item"><a
+     href="#!"><img
+     src={notification1}alt=""
+     className="marginright"></img>
+    
+     </a>
+     </li>
+     <li className="nav-item">
+     <div ><a
+>>>>>>> 193522388f2f0824215037f294365728035d8fbb
       aria-haspopup="true"
       href="#" 
       className="dropdown-toggle nav-link white-text"
@@ -95,6 +127,7 @@ class NavBar extends Component {
       </div>
       
       </div>
+<<<<<<< HEAD
       
       </div>
       
@@ -103,15 +136,38 @@ class NavBar extends Component {
       <div className="col-md-6">
       
       <input placeholder="ابحث عن معلمين, دورات ,أوراق عمل"
+=======
+      </li>
+     </ul>
+    
+     </div>
+     
+     <div className="header-desektop-search col-md-6">
+     
+    
+     
+      <input placeholder="ابحث  عن  دورات , معملين , أوراق عمل"
+>>>>>>> 193522388f2f0824215037f294365728035d8fbb
       type="text"
-      className="form-control custom-control-text2 header-input"
+      className="form-control custom-control-text2 header-input customInput"
       style={{color: "white", opacity: 1}}/>
+<<<<<<< HEAD
       
       </div><ul className="navbar-nav ml-auto col-md-2"><div
+=======
+     
+      
+     
+      </div>
+     
+     <div className="right-nav-bar">
+     <ul className="navbar-nav ml-auto col-md-2"><div
+>>>>>>> 193522388f2f0824215037f294365728035d8fbb
       className="navbar-brand"><div
       className="container">
       
       <div className="row"><img
+<<<<<<< HEAD
       src={path}
       alt="" 
       className="rounded-circle" 
@@ -119,6 +175,11 @@ class NavBar extends Component {
       height:50}}/>
       
       
+=======
+      src={path}/>
+      
+     
+>>>>>>> 193522388f2f0824215037f294365728035d8fbb
       </div>
       
       </div>
@@ -128,6 +189,7 @@ class NavBar extends Component {
       
       
       </ul>
+<<<<<<< HEAD
       
       
       
@@ -146,5 +208,20 @@ class NavBar extends Component {
 
 
 }
+=======
+     </div>
+    
+     
+      </nav>
+
+</div>
+        </header>
+     
+  
+  
+      );
+    }
+  }
+>>>>>>> 193522388f2f0824215037f294365728035d8fbb
 
 export default NavBar;

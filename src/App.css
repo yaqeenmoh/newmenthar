@@ -673,7 +673,11 @@ color: #aeacac;
 .custom-control-text2{
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
-  background-color:white !important;
+  background-color: #327BF9 ;
+  opacity: 40%;
+  border: 1px solid #327BF9 !important;
+  border-radius: -15.75rem 2rem !important;
+
 }
 .search-btn{
   background-color:#195DB4;
@@ -775,18 +779,56 @@ input::placeholder{
 .header-input input::placeholder{
   color:white !important;
 }
-<<<<<<< HEAD
-
-.box-container {
-
-  padding: 20px;
-  
-  cursor: grab;
-  
-  }
-=======
 .box-container {
   padding: 20px;
   cursor: grab;
 }
->>>>>>> f88cf6530382a09c20020b1d648b16a70850daf6
+
+}
+.marginright{
+
+ 
+    margin-right: 11px !important;
+
+}
+.navbar.responsive {
+
+  position: relative;
+}
+.navbar.responsive .img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.form-control {
+  display: inline-block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #327BF9;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  opacity: 40%;
+  font-family: "Noto Kufi Arabic";
+}
+
+.customInput{
+  font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 15px;
+text-align: right;
+color: #fff;
+opacity: 0.6;
+}
+
+>>>>>>> 193522388f2f0824215037f294365728035d8fbb
