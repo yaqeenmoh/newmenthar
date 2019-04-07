@@ -6,7 +6,7 @@ import {
 } from "mdbreact";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import path  from './icons/other/2/Untitled.png' ;
+import path  from './icons/other/2/Group 8838.png' ;
 import Path2 from './icons/Path35.svg'
 import chat1 from './icons/chat (1).svg'
 import notification1 from './icons/notification (1).svg'
@@ -82,7 +82,12 @@ class NavBar extends Component {
       className="dropdown-item"> ملفاتي</a>
       
       </div>
+<<<<<<< HEAD
       
+=======
+  
+
+>>>>>>> bf1cd8c34311a5c61d78f743122aef3fd8087dc5
       </div>
       </li>
      </ul>
@@ -102,6 +107,7 @@ class NavBar extends Component {
      
       </div>
      
+<<<<<<< HEAD
      <div className="right-nav-bar">
      <ul className="navbar-nav ml-auto col-md-2"><div
       className="navbar-brand"><div
@@ -121,6 +127,29 @@ class NavBar extends Component {
       
       </ul>
      </div>
+=======
+      <MDBNavbarNav right>
+        <MDBNavbarBrand>
+            <MDBContainer>
+              <MDBRow>
+              <img
+          src={path}
+          alt=""
+         
+          width=" 227.78px"
+          height=" 58.8px"
+          background= "transparent"
+         
+        >
+        </img>
+
+               
+              </MDBRow>
+            </MDBContainer>
+          </MDBNavbarBrand>
+
+        </MDBNavbarNav>
+>>>>>>> bf1cd8c34311a5c61d78f743122aef3fd8087dc5
     
      
       </nav>
