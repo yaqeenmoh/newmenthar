@@ -6,7 +6,7 @@ import {
 } from "mdbreact";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import path  from './icons/girl.png' ;
+import path  from './icons/other/2/Untitled.png' ;
 import Path2 from './icons/Path35.svg'
 import chat1 from './icons/chat (1).svg'
 import notification1 from './icons/notification (1).svg'
@@ -23,49 +23,37 @@ class NavBar extends Component {
     }));
 
     render() {
-
       return (
-     
-     
-      <nav className="navbar navbar-dark navbar-expand-md primary-color"
+        <header>
+          <div className="topnav">
+          <nav className="navbar navbar-dark navbar-expand-md primary-color"
       role="navigation">
-     
-      <div className="header-desktop-leftside col-md-4">
-     
-      <ul className="header-desktop-profileicons nav col-md-6">
+       <div className="header-desktop-leftside col-md-4">
+       <ul className="header-desktop-profileicons nav col-md-6">
      
      
-      <li className="nav-item"><a
-      href="#!"><img
-      className="margin"
-      src="/static/media/question-mark.ec349e0f.svg"></img>
+     <li className="nav-item"><a
+     href="#!"><img className="marginright"
      
-      </a></li>
-     
-      <li className="nav-item"><a
-      href="#!">
-      <img className="margin"
-      src={questionmark}></img></a></li>
-     
-      <li className="nav-item"><a
-      href="#!"><img
-      src={notification1}alt=""
-      className="margin"></img>
-     
-      </a></li>
-     
-      </ul>
-     
-      <div className="header-desktop-profile col-md-6">
-     
-      <img src="/static/media/girl.6b23eaa1.png"
-      alt=""style=
-      {{opacity:0.75,width:38.15,
-      height:35.02}}
-      className="rounded-circle header-desktop-profilepic "
-      />
-     
-      <div className="dropdown"><a
+     src={questionmark}></img>
+    
+     </a>
+     </li>
+    
+     <li className="nav-item"><a
+     href="#!">
+     <img className="marginright"
+     src={chat1}></img></a></li>
+    
+     <li className="nav-item"><a
+     href="#!"><img
+     src={notification1}alt=""
+     className="marginright"></img>
+    
+     </a>
+     </li>
+     <li className="nav-item">
+     <div ><a
       aria-haspopup="true"
       href="#" 
       className="dropdown-toggle nav-link white-text"
@@ -95,29 +83,32 @@ class NavBar extends Component {
       </div>
      
       </div>
+      </li>
+     </ul>
+    
+     </div>
      
-      </div>
+     <div className="header-desektop-search col-md-6">
      
-      </div>
+    
      
-      <div className="col-md-6">
-     
-      <input placeholder="ابحث عن معلمين, دورات ,أوراق عمل"
+      <input placeholder="ابحث  عن  دورات , معملين , أوراق عمل"
       type="text"
-      className="form-control custom-control-text2 header-input"
+      className="form-control custom-control-text2 header-input customInput"
       style={{color: "white", opacity: 1}}/>
      
-      </div><ul className="navbar-nav ml-auto col-md-2"><div
+      
+     
+      </div>
+     
+     <div className="right-nav-bar">
+     <ul className="navbar-nav ml-auto col-md-2"><div
       className="navbar-brand"><div
       className="container">
      
       <div className="row"><img
-      src={path}
-      alt="" 
-      className="rounded-circle" 
-      style= {{width:50,
-      height:50}}/>
-     
+      src={path}/>
+      
      
       </div>
      
@@ -128,19 +119,18 @@ class NavBar extends Component {
      
      
       </ul>
-     
-     
-     
+     </div>
+    
      
       </nav>
+
+</div>
+        </header>
      
-     
-     
-     
-     
+  
+  
       );
-     
-      }
-}
+    }
+  }
 
 export default NavBar;
