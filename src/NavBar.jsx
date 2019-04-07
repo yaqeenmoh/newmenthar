@@ -13,6 +13,7 @@ import chat1 from './icons/chat (1).svg'
 import notification1 from './icons/notification (1).svg'
 import questionmark from './icons/question-mark.svg'
 import magnify from './icons/other/2/magnifying-glass.svg'
+import { relative } from "path";
 class NavBar extends Component {
   state = {
     collapseID: ""
@@ -103,7 +104,7 @@ class NavBar extends Component {
     
      </div>
      
-     <div className="header-desektop-search col-md-5" style={{position:"realative"}}>
+     <div className="header-desektop-search col-md-5" style={{position:"relative"}}>
      
     
     
@@ -111,8 +112,9 @@ class NavBar extends Component {
       type="text"
       className="form-control custom-control-text2 header-input customInput"
       style={{color: "white", opacity: 1}}/>
-       <a
-     href="#!"><img className="marginright"
+       <a style={{position:"absolute",    bottom: 10,left: 37}}
+     href="#">
+     <img 
      
      src={magnify}/>
     
