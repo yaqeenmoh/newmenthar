@@ -3,7 +3,7 @@ import './App.css';
 import Magn from './icons/other/magn.svg';
 import Brain from './icons/other/2/brain.svg'
 import icc from './icons/other/2/icon.svg'
-
+import magnify from './icons/other/2/magnifying-glass.svg'
 
 export default class Input extends Component {
 
@@ -36,11 +36,8 @@ export default class Input extends Component {
 
 <form onSubmit={this.handleSubmit} style={{marginLeft:"auto", marginRight:"auto"}} >
 <h4 style={{width:800 ,marginBottom:20, marginLeft:-20 , marginLeft:"auto", marginRight:"auto" }}>هل تبحث عن تخصص معين</h4>
-<div className="row" style={{marginLeft:250}}>
+<div className="row" style={{marginLeft:250,position:"relative"}}>
 <div class="col-md-1 input-col search-input">
-<img style={{width:20,height:20 , marginLeft:10}} src={Magn}/>
-
-
 
 <span className="search-text" style={{
 fontFamily: "Noto Kufi Arabic",
@@ -49,16 +46,28 @@ fontSize: 20,
 color: "#fff",
 background: "#034173",
 width: 48.01,
-height: 32.3
+height: 32.3,
+float: "right"
 
-}}> بحث</span>
+}}> إبحث</span>
+<a style={{position:"absolute",    bottom: 10,right:52,background: "transparent"}}
+     href="#">
+     <img 
+     
+     src={magnify}/>
+    
+     </a>
+
+    
+
+
 </div>
 
 <div className="col-md-4 input-col">
 
 
 <input type="search"
-className="form-control custom-control-text" style={{color:" #d1d1d1",fonFamily: "Noto Kufi Arabic",fontWeight:"normal",textAlign:"right"}}
+className="form-control custom-control-text" style={{background:" #fff",color:" #d1d1d1",fonFamily: "Noto Kufi Arabic",fontWeight:"normal",textAlign:"right"}}
          placeholder=" أين تريد أن تدرس (البلد،الجامعة)؟    "
          ref={input => this.search = input}
          onChange={this.handleInputChange}
@@ -67,8 +76,8 @@ className="form-control custom-control-text" style={{color:" #d1d1d1",fonFamily:
 
        <div class="col-md-4 input-col">
        <input type="search"
-className="form-control custom-control-text2" style={{color:" #d1d1d1",fonFamily: "Noto Kufi Arabic",fontWeight:"normal",textAlign:"right"}}
-         placeholder="  ماذا تريد أن تدرس (التخصص) ؟ "
+className="form-control custom-control-text" style={{background:" #fff",color:" #d1d1d1",fonFamily: "Noto Kufi Arabic",fontWeight:"normal",textAlign:"right"}}
+         placeholder  ="  ماذا تريد أن تدرس (التخصص) ؟ "
          ref={input => this.search = input}
          onChange={this.handleInputChange}
        />
